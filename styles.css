@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+body{
+    background-color: #8602ff30;
+    font-family: 'Baloo 2', cursive;
+}
+nav {
+    font-size: 1.3vw;
+    font-family: 'Baloo 2', cursive;
+}
+.layout{
+    display: grid;
+    grid-template-areas: 
+        'i ii iii iv v vi vii viii'
+        'xxviii xox xox xox xox xox xox ix'
+        'xxvii xox xox xox xox xox xox x'
+        'xxvi xox xox xox xox xox xox xi'
+        'xxv xox xox xox xox xox xox xii'
+        'xxiv xox xox xox xox xox xox xiii'
+        'xxiii xox xox xox xox xox xox xiv'
+        'xxii xxi xx xix xviii xvii xvi xv'
+    ;
+    /* grid */
+    grid-template-columns: repeat(8,5vw);
+    /* grid-template-rows: repeat(8, 3vw); */
+    /* column-gap: 0.25vw; */
+    margin: 1vw;
+}
+#screen{
+    display: flex;
+    justify-content: center;
+}
+#homescreen{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#homescreen div{
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-top: 1vw;
+}
+.cell{
+    display: flex;
+    justify-content: center;
+    /* align-self: center; */
+    align-items: center;
+    /* text-align: center; */
+    /* align-content: flex-end; */
+    height: 5vw;
+    width: 5vw;
+    border: 2px solid rgb(6, 4, 4);
+    background-color: #fff17669;
+}
+.blockcells{
+    display: flex;
+    height: 1vw;
+    width: 1vw;
+    border: 2px solid red;
+    background-color: aquamarine;
+}
+#box0{
+    grid-area: xox;
+    width: 28.5vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0vw 0.8vw;
+}
+#box1{
+    grid-area: i;
+    background-color: #ff8e85;
+    background-image: url('NicePng_home-icon-png_131873.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box2{
+    grid-area: ii;
+}
+#box3{
+    grid-area: iii;
+}
+#box4{
+    grid-area: iv;
+}
+#box5{
+    grid-area: v;
+}
+#box6{
+    grid-area: vi;
+}
+#box7{
+    grid-area: vii;
+}
+#box8{
+    grid-area: viii;
+    background-image: url('NicePng_home-icon-png-transparent_8265704.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box9{
+    grid-area: ix;
+}
+#box10{
+    grid-area: x;
+}
+#box11{
+    grid-area: xi;
+}
+#box12{
+    grid-area: xii;
+}
+#box13{
+    grid-area: xiii;
+}
+#box14{
+    grid-area: xiv;
+    background-color: #10e19c8c;
+}
+#box15{
+    grid-area: xv;
+    background-color: rgb(16, 225, 156);
+    background-image: url('NicePng_home-icon-png_145167.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+}
+#box16{
+    grid-area: xvi;
+}
+#box17{
+    grid-area: xvii;
+}
+#box18{
+    grid-area: xviii;
+}
+#box19{
+    grid-area: xix;
+}
+#box20{
+    grid-area: xx;
+}
+#box21{
+    grid-area: xxi;
+}
+#box22{
+    grid-area: xxii;
+    background-image: url('NicePng_home-icon-png-transparent_8265704.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box23{
+    grid-area: xxiii;
+}
+#box24{
+    grid-area: xxiv;
+}
+#box25{
+    grid-area: xxv;
+}
+#box26{
+    grid-area: xxvi;
+}
+#box27{
+    grid-area: xxvii;
+}
+#box28{
+    grid-area: xxviii;
+    background-color: #ffb6b0;
+}
+
+#win{
+    display: flex;
+    background-color: #c4c4c4;
+    height: 18vw;
+    width: auto;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('gold-crown-115309250774f4zstdeu2_adobe_express.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5.5vw;
+    /* opacity: 0.8; */
+    background-blend-mode: color-burn;
+}
+/* #win img{
+    height: 18vw;
+    width: auto;
+    opacity: 0.6;
+} */
+#dice1display, #dice2display{
+    display: flex;
+    height: 6vw;
+    width: auto;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dice1, #dice2{
+    height: 5vw;
+    width: 5vw;
+    box-sizing: border-box;
+}
+.player2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 1vw;
+}
+.player1{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+footer{
+    display: flex;
+    width: 98.9vw;
+    margin-top: 5rem;
+    background-color: #00000014;
+    padding-bottom: 2rem;
+    padding-top: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+.footerleft{
+    /* background-color: #00000014; */
+    margin: 0 10rem 0 10rem ;
+    font-size: 1.3rem;
+    padding-right: 20rem;
+    border-right: 5px solid blanchedalmond;
+    border-radius: 5px;
+    width: 50%;
+}
+.footerright{
+    /* background-color: #00000014; */
+    margin: 0 10rem 0 0;
+    align-items: flex-end;
+    font-size: 1.3rem;
+    width: 50%;
+}
+.footerright a{
+    text-decoration: none;
+    color: black;
+}
+.footerleft i{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1023px) {
+    footer{
+        width: 100vw;
+    }
+    .footerleft{
+        font-size: 1rem;
+        margin-left: 2.1vw;
+        margin-right: 2.1vw;
+        padding-right: 1rem;
+    }
+    .footerleft i{
+        font-size: 1rem;
+    }
+    .footerright{
+        font-size: 1rem;
+        margin: 0px;
+        margin-left: 1.1rem;
+
+    }
+    #screen{
+        display: flex;
+        flex-direction: column;
+    }
+    .layout{
+        margin: 0 auto;
+        grid-template-columns: repeat(8, 11vw);
+    }
+    .cell{
+        height: 11vw;
+        width: 11vw;
+    }
+    #box0{
+        width: 64.5vw;
+    }
+    #win{
+        height: 44vw;
+        background-position: 11.5vw;
+    }
+    #dice1display, #dice2display{
+        height: 11vw;
+    }
+    .player1{
+        align-items: baseline;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+    .player2{
+        align-items: flex-end;
+        margin-top: 2vw;
+    }
+    .nav-link{
+        font-size: 4vw;
+    }
+}
